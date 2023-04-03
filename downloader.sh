@@ -20,10 +20,12 @@ if [ ! -f $FILE ]; then
     exit 0
 fi
 
-while IFS= read -r LINK; do
-    if [ ! -z "$LINK" ]; then
-        echo
-        axel -acn $CONNECTION "$LINK"
-    fi
-done <"$FILE"
-
+while true; do
+    while IFS= read -r LINK; do
+        if [ ! -z "$LINK" ]; then
+            echo
+            axel -acn $CONNECTION "$LINK"
+        fi
+    done <"$FILE"
+    sleep 1
+done
