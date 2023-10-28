@@ -9,8 +9,10 @@ Loading the `bash-configs.sh` script in `~/.bashrc` or `~/.bash_aliases`
 ```shell
 sudo apt-get install -y nano most xclip
 
-## Change `/path/to/work-assistant/` to your path!
-echo ". /path/to/work-assistant/bash-configs.sh" >> ~/.bashrc
+git clone https://github.com/amir2b/work-assistant.git
+
+## Change `$(pwd)/work-assistant/` to root directory of project!
+echo ". $(pwd)/work-assistant/bash-configs.sh" >> ~/.bashrc
 ## OR
-# echo ". /path/to/work-assistant/bash-configs.sh" >> ~/.bash_aliases
+# echo ". $(pwd)/work-assistant/bash-configs.sh" >> ~/.bash_aliases
 ```
