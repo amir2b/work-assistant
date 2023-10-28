@@ -1,6 +1,6 @@
 # work-assistant
 
-It helps you to do your works easily
+It helps you to do your works easily.
 
 ## Setup
 
