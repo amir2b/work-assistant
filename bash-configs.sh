@@ -1,7 +1,6 @@
 #!/bin/bash
 #
 # sudo apt-get install -y nano most xclip
-# echo "set -g mouse on" > ~/.tmux.conf
 
 OLD_PATH=$(pwd)
 cd "$(dirname -- "$BASH_SOURCE")" || exit 1
